@@ -7,11 +7,15 @@ print ("\n 1 2 3 A \n"
 
 toneInput = raw_input("Select tone: ")
 
-tones = ['1','2','3','A','a','4','5','6','B','b','7','8','9','C','c','*','0','#','D','d']
+tones = [['1','2','3','A'],['4','5','6','B'],['7','8','9','C'],['*','0','#','D']]
+tones2 = ['1','2','3','A','4','5','6','B','7','8','9','C','*','0','#','D']
 
-if not toneInput in tones:
-	print "\nERROR: Input is not valid\n"
-	sys.exit()
+#if not toneInput in tones:
+#	print "\nERROR: Input is not valid\n"
+#	sys.exit()
+print tones
+print tones2
+print tones2.index(toneInput)
 	
 lower = [697, 770, 852, 941]
 upper = [1209, 1336, 1477, 1633]
