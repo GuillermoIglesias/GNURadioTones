@@ -54,6 +54,8 @@ for i in range(numSamples):
     sample *= (sinLower + sinUpper)
     data.append(int(sample))
 
+if str(toneInput) == '*':
+	toneInput = 'x'
 
 f = wave.open('Tone_' + str(toneInput) + '.wav', 'w')
 f.setparams((numChan, dataSize, sampleRate, numSamples, "NONE", "Uncompressed"))
